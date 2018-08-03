@@ -1,0 +1,879 @@
+@r: 750/10rem;
+*{
+  box-sizing: border-box;
+}
+body,html{
+  font-family: Microsoft YaHei;
+  background: #e4e4e4;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+a{
+  text-decoration: none;
+}
+textarea,input,select{
+  outline:none;
+}
+@media (min-width: 768px) {
+  body {
+    display:none;
+  }
+}
+.f-l{
+  float: left;
+}
+.f-r{
+  float: right;
+}
+//carousel
+.swiper-slide img{
+  width: 100%;
+  height: 420/@r;
+}
+//loginBar
+.loginBar-container{
+  font-size: 25/@r;
+  background-color: #fff;
+  height: 95/@r;
+  line-height: 95/@r;
+  position: relative;
+  padding: 0 22/@r;
+}
+.text-ellipsis{
+  margin-right: 10/@r;
+}
+.login-btn{
+  position:absolute;
+  right:25/@r;
+  top: 15/@r;
+  display: inline-block;
+  width:130/@r;
+  line-height:65/@r;
+  height:65/@r;
+  text-align: center;
+  color: #ffffff;
+  font-size:25/@r;
+  border-radius: 8/@r;
+  background:deepskyblue;
+}
+//navigation
+
+.nav-container{
+  display: table;
+  width: 100%;
+  padding: 25/@r 0 25/@r;
+  background-color: #fff;
+  margin: 20/@r 0;
+} 
+.nav-container ul li{
+  width: 25%;
+  margin-bottom: 21/@r; 
+}
+.nav-container ul li a i{
+  display: inline-block;
+  background-size: auto 60%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  width:150/@r;
+  height:150/@r;
+  border-radius:50%;
+  background-color:#fdfdfd;
+}
+.nav-container ul li a{
+  font-size: 0;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+.nav-container ul li a span{
+  font-size:26/@r;
+  display:inline-block;
+  color:#333;
+}
+//videos
+.video-item{
+  width:100%;
+  min-height:350/@r;
+  background-image:url("http://img.taopic.com/uploads/allimg/140418/235107-14041PRF875.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+  position: relative;
+}
+.video-container .title h3{
+  font-size:26/@r;
+  width:100%;
+  height:100/@r;
+  text-align:center;
+  line-height:100/@r;
+  background-color:#ffffff;
+}
+.video-container .title h3 span{
+  padding:0 15/@r;
+}
+.video-container .title em{
+  display: inline-block;
+  vertical-align: middle;
+  width: 24%;
+  border-top: 1px solid #c9c9c9;
+}
+.video-container .video-item{
+  position:relative;
+}
+.video-item .btn{
+  display: inline-block;
+  width: 90/@r;
+  height: 90/@r;
+  border-radius:100%;
+  background: rgba(0,0,0,.5);
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;  
+  margin: -45/@r 0 0 -45/@r;
+}
+//login
+.top-header{
+  width: 100%;
+  height: 76/@r;  
+  line-height: 76/@r;  
+  background-color: #4a535c;
+  text-align: center;
+  position:relative;
+}
+.top-header em{
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  width: 30/@r;
+  height: 30/@r;
+  margin-top: -15/@r;
+  background-repeat: no-repeat;
+  background-position: 0;
+  -moz-background-size: auto 100%;
+  -o-background-size: auto 100%;
+  background-size: auto 100%;
+}
+.top-header .topBar{
+  width: 60%;
+  height: 100%;
+  margin:0 auto;
+}
+.top-header span{
+  font-size:32/@r;
+  height: 100%;
+  margin:0 auto;
+  color:#ffffff;
+  display:block;
+}
+.login-container .login-icon{
+  width:100%;
+  height:680/@r;
+  opacity: 0.8;
+}
+.login-container .login-form{
+  background-color: #f2f2f2;
+  width: 100%;
+  border: 1px solid #d7d7d7;
+  border-left: none;
+  border-right: none;  
+  padding:65/@r 50/@r;
+}
+.login-container .login-form .form-group{
+  width:100%;
+  line-height:100/@r;
+}
+.warning{
+  color:red;
+  font-size:26/@r;
+  line-height:40/@r;
+}
+.login-container .login-form .form-group label{
+  font-size:28/@r;
+}
+.login-container .login-form .form-group input{
+  border: none;
+  background:#ffffff;
+  padding:16/@r 25/@r;
+  margin-left: 50/@r;
+  width:75%;
+  border:1px solid #cfcfcf;
+  outline: none;
+  font-size:28/@r;
+}
+.login-container .login-form .form-group input.sub{
+  border:none;
+  background:#093;
+  color:#ffffff;
+  font-size:30/@r;
+  padding:16/@r 0;
+  width:100%;
+  border-radius:6/@r;
+  margin:0;
+  font-weight: bold;
+}
+.register-btn{
+  font-size:26/@r;
+  color:#4a535c;
+  padding:20/@r 10/@r;
+  display:inline-block;
+  border-radius:6/@r;
+  font-weight: bold;
+}
+.alert.mask{  
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.5);
+  z-index: 1;
+}
+.alert .alert-cont{  
+  width: 84%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding:80/@r 0;
+  margin-left: -42%;
+  margin-top: -150/@r;
+  background-color: rgba(0,0,0,.7);
+  -moz-border-radius: 20/@r;
+  border-radius: 20/@r;
+  color:#fff;
+  text-align:center;
+  font-size:28/@r;
+}
+.alert .alert-cont i{
+  display:block;
+  background-size:cover;
+  width:80/@r;
+  height:80/@r;
+  font-size:28/@r;
+  margin:0 auto;
+  margin-bottom:50/@r;
+}
+.alert .alert-cont i.text{
+  width:400/@r;
+  line-height:40/@r;
+}
+.alert .btn{
+  width: 150/@r;
+  height: 60/@r;
+  line-height: 60/@r;
+  border-radius:10/@r;
+  border:none;
+  color:#fff;
+  font-size:24/@r;
+  background: deepskyblue;
+  text-align:center;
+  outline:none;
+}
+//schoolIntro
+.schoolIntro-container .introTitle{
+  font-size:28/@r;
+  width:100%;
+  height:95/@r;
+  line-height:95/@r;
+  background: #f2f2f2;
+  padding-left:40/@r;
+}
+
+.schoolIntro-container .intro{
+  font-size:28/@r;
+  margin-top:20/@r;
+  padding:50/@r 20/@r;
+  line-height:55/@r;
+  background: #f2f2f2;
+}
+//teacherRecord
+.teacher-container .teacher-record ul li{
+  background:#f2f2f2;
+  width:100%;
+  height: 220/@r;
+  position:relative;
+  margin-bottom:20/@r;
+}
+.teacher-container .teacher-record .teacher-record-icon{
+  position:absolute;
+  top: 0;
+  left:20/@r;
+  width:170/@r;
+  height:170/@r;
+  border-radius:100%;
+  margin-top:25/@r;
+  background-size: cover;
+}
+.teacher-container .teacher-record .teacher-record-info{
+  position:absolute;
+  top: 10/@r;
+  right:30/@r;
+  float: right;
+  width:490/@r;
+}
+.teacher-container .teacher-record .teacher-record-info p{
+  font-size:20/@r;
+  color:#797979;
+  line-height:48/@r;
+}
+.teacher-container .teacher-record .teacher-record-info p.name{
+  border-bottom: 1px solid #cfcfcf;
+  font-size:26/@r;
+  color:#333;
+  padding-bottom: 5/@r;
+}
+.teacher-container .teacher-record .teacher-record-info p.name i{
+  float: right;
+  border: 1px solid #cfcfcf;
+  background:#fff;
+  font-size:22/@r;
+  border-radius:10/@r;
+  padding:0 10/@r;
+}
+//classmateRecord
+.classmateRecord-container .prompt{
+  width:100%;
+  height:80/@r;
+  line-height:80/@r;
+  background-color:#ffffff;
+  font-size:24/@r;
+  padding-left:30/@r;
+}
+.classmateRecord-container .classmateRecord{
+  width:100%;
+  display:table;
+  background-color:#ffffff;
+  font-size:24/@r;
+  margin: 20/@r 0;
+  padding:20/@r 0;
+}
+.classmateRecord-container .classmateRecord ul li{
+  width:33.2%;
+  float: left;
+  position: relative;
+  text-align:center;
+  margin:20/@r 0;
+}
+.classmateRecord-container .classmateRecord ul li img{
+  width: 65%;
+  height: 65%;
+  border-radius: 50%;
+}
+.tag{
+  position: absolute;
+  padding:10/@r;
+  border-radius:10/@r;
+  background: rgba(0,0,0,.5);
+  left: 0;
+  font-size:20/@r;
+  top: 0;  
+  color:#ffffff;
+}
+//detail
+.classmateRecord-container .detail-header{
+  height:400/@r;
+  background-size:cover;
+  background-position:center;
+  position:relative;
+}
+.classmateRecord-container .detail-header .head{
+  width:210/@r;
+  position:absolute;
+  left:30/@r;
+  bottom: 30/@r;
+  text-align:center;
+  padding: 20/@r 20/@r;
+  font-size:26/@r;
+  font-weight:bold;
+}
+.classmateRecord-container .detail-header .head img{
+  width:100%;
+  margin-bottom:20/@r;
+  border-radius:100%;
+}
+.classmateRecord-container nav{
+  width:100%;
+  height:80/@r;
+  background:#f2f2f2;
+}
+.classmateRecord-container nav ul li{
+  width:33.3%;
+  float: left;
+  height:80/@r;
+  line-height:80/@r;
+  font-size: 28/@r;
+  text-align:center;
+  border-left:1px solid #cfcfcf;
+}
+.classmateRecord-container nav ul li:first-child{
+  border:none;
+}
+.classmateRecord-container .my-photos .photo-item{
+  padding:20/@r 0;
+}
+.photo-item i{
+  font-size:26/@r;
+  margin:0 0 10/@r 20/@r;
+  display:block;
+}
+.photo-item a{
+  display:inline-block;
+  width:33.3%;
+  padding:15/@r 10/@r 0 10/@r;
+  height:300/@r;
+}
+.photo-item a img{
+  width:100%;
+  height:100%;
+}
+.classmateRecord-container .my-info{
+  padding:10/@r;
+}
+.classmateRecord-container .my-info div{
+  background-color:#f2f2f2;
+  margin-top:10/@r;
+  font-size:28/@r;
+  color:#333;
+  padding:25/@r;
+}
+.tag1{
+  background-color:#fff;
+  display:inline-block;
+  padding:10/@r;
+  border-radius:8/@r;
+  border:1px solid #797979;
+  font-size: 18/@r;
+  color:#6f6f6f;
+}
+.classmateRecord-container .my-info div h4{
+  font-size:36/@r;
+  color:#333;
+  display:inline-block;
+  font-weight:bold;
+}
+.classmateRecord-container .my-info div span{
+  margin-right:20/@r;
+}
+.classmateRecord-container .cont{
+  position:relative;
+  overflow: hidden;
+}
+.classmateRecord-container .cont .slide-ul{
+  position:relative;
+  width: 200%;
+  display:table;
+  transition: left .4s ease-in-out;
+}
+.classmateRecord-container .cont .slide-ul li{
+  width: 50%;
+  display: block;
+}
+.blank{
+  font-size:22/@r;
+  width:200/@r;
+  height:80/@r;
+  line-height:80/@r;
+  margin:0 auto;
+  text-align:center;
+}
+.active{
+  background-color: #fff;
+}
+.photoDetail-container,.myPhotoDetail-container{
+  height: 100%;
+  background-color: #363636;
+}
+.photoDetail-container img,.myPhotoDetail-container img{
+  width: 100%;
+  margin-top:100/@r;
+}
+//release
+.release-container .title{
+  width:100%;
+  height:80/@r;
+  line-height:80/@r;
+  background:#797979;
+  color:#fff;
+  font-size:30/@r;
+  text-align:left;
+  padding-left:50/@r;
+}
+.release-container .release form .form-group{
+  padding-top: 30/@r;
+  width:90%;
+  margin:0 auto;
+}
+.release-container .release form .form-group textarea{
+  width:100%;
+  height:350/@r;
+  padding:20/@r;
+  border:none;
+  font-size:22/@r;
+}
+.release-container .release form .form-group label{
+  width:100%;
+  position:relative;
+  display:block;
+  height:40/@r;
+  font-size:20/@r;
+  background:#fff;
+  margin-top:-10/@r;
+}
+.release-container .release form .form-group label i{
+  position:absolute;
+  right:10/@r;
+  bottom: 10/@r;
+}
+.release-container .release form .form-group input.sub{
+  width:100%;
+  height:80/@r;
+  border:none;
+  font-size:30/@r;
+  border-radius:10/@r;
+  background:#093;
+  color:#fff;
+}
+//quotation
+.quotation-container .quotation-header{
+  height:420/@r;
+  background-size:cover;
+  background-position:center;
+  position:relative;
+}
+.quotation-container .quotation-list ul li{
+  background-color:#fff;
+  width:100%;
+  height:200/@r;
+  font-size:30/@r;
+  position:relative;
+  margin-top: 20/@r;
+  padding: 25/@r;
+}
+.quotation-container .quotation-list ul li img{
+  width:150/@r;
+  height:150/@r;
+}
+.quotation-container .quotation-list ul li .box{
+  position:absolute;
+  left:220/@r;
+  top: 35/@r;
+  width:500/@r;
+  line-height:35/@r;
+}
+.quotation-container .quotation-list ul li .box .time{
+  font-size:18/@r;
+  color:#9f9f9f;
+}
+.quotation-container .quotation-list ul li .box .text{
+  margin-top:20/@r;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+//personal
+.personal-container .detail-header{
+  height:400/@r;
+  background-size:cover;
+  background-position:center;
+  position:relative;
+}
+.personal-container .detail-header .head{
+  width:240/@r;
+  height:200/@r;
+  position:absolute;
+  left:50%;
+  top: 20/@r;
+  margin-left:-120/@r;
+  text-align:center;
+}
+.personal-container .detail-header .head img{
+  width:150/@r;
+  height:150/@r;
+  border-radius:100%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom:20/@r;
+}
+.personal-container .detail-header .quit{ 
+  position: absolute;
+  right: 15/@r;
+  top: 15/@r;
+  border: none;
+  background-color: rgba(0,0,0,.4);
+  padding: 16/@r 20/@r;
+  color: rgba(255,255,255,.8);
+  border-radius: 50%;
+  outline:none;
+}
+.personal-container .detail-header .head i{
+  font-size:30/@r;
+}
+.personal-container .personal-body a{
+  display:inline-block;
+  width:100%;
+  height:110/@r;
+  background-color:#f2f2f2;
+  font-size:30/@r;
+  margin-top:15/@r;
+  position:relative;
+}
+.personal-container .personal-body a i{
+  display:inline-block;
+  width:60/@r;
+  height:60/@r;
+  line-height:60/@r;
+  background-position:center;
+  background-size:cover;
+  position:absolute;
+  left:25/@r;
+  top: 25/@r;
+}
+.personal-container .personal-body a span{
+  display:inline-block;
+  height:100%;
+  margin-left:115/@r;
+  line-height:110/@r;
+  color:#333;
+}
+//register
+.register-container{
+  position: relative;
+}
+.register-container .register-form{
+  padding:28/@r;
+}
+.register-container .register-form form .form-group{
+  background-color:#f2f2f2;
+  margin-top: 15/@r;
+  height:95/@r;
+  border-radius:10/@r;
+  padding:10/@r 30/@r;
+}
+.register-container .register-form form .form-group.register input{
+  width:100%;
+}
+.register-form form .form-group label,.register-form form .form-group span{
+  font-size:28/@r;
+  float: left;
+  line-height: 80/@r;
+  text-align:center;
+}
+.register-container .register-form form .form-group.sex span{
+  margin-right:20/@r;
+}
+.register-form form .form-group label i,.register-form form .form-group span i{
+  color:red;
+}
+.register-form form .form-group input{
+  border:none;
+  height:100%;
+  width:500/@r;
+  border-radius:8/@r;
+  padding:0 20/@r;
+  float: right;
+}
+.register-form form .form-group textarea{
+  border:none;
+  height:100%;
+  width:500/@r;
+  border-radius:8/@r;
+  padding: 20/@r;
+  float: right;
+}
+.register-form form .form-group span.constellation{
+  position:relative;
+  display: inline-block;
+  width:500/@r;
+  height:100%;
+  float: right;
+}
+span.constellation::after {
+  content: "\25bc";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 70/@r;
+  height: 100%;
+  line-height: 70/@r;
+  vertical-align: middle;
+  text-align: center;
+  background: #94c1e7;
+  color: #2984ce;
+  -moz-border-radius: 0 6px 6px 0;
+  -webkit-border-radius: 0 6px 6px 0;
+  border-radius: 0 6px 6px 0;
+  pointer-events: none;
+}
+.register-form form .form-group span.constellation select{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+  height:100%;
+  width:100%;
+  border-radius:5/@r;
+  border: 1px solid #94c1e7;
+}
+.register-form form .form-group input.sub{
+  background:deepskyblue;
+  color:#fff;
+  font-size:28/@r;
+}
+.register-form form .form-group.sex label{
+  width:50/@r;
+  height: 100%;
+  line-height:70/@r;
+}
+.register-form form .form-group.sex input{
+  width: 24/@r;
+  height:100%;
+  float: left;
+}
+//personalInfo
+.personalInfo-container .personalInfo-list{
+  padding:25/@r;
+}
+.personalInfo-list form{
+  border-radius:10/@r;
+  padding:30/@r 0;
+  background-color:#f2f2f2;
+}
+.personalInfo-list form .form-group{
+  height:105/@r;
+  padding:20/@r 40/@r;
+}
+.personalInfo-list form .form-group label,.personalInfo-list form .form-group span{
+  font-size:30/@r;
+  float: left;
+  line-height: 65/@r;
+  text-align:center;
+}
+.personalInfo-list form .form-group.sex span{
+  margin-right: 50/@r;
+}
+.personalInfo-list form .form-group input{
+  border:none;
+  height:100%;
+  width:500/@r;
+  border-radius:8/@r;
+  background:none;
+  padding:0 20/@r 0 30/@r;
+  float: right;
+}
+.personalInfo-list form .form-group input:focus{
+  background:#fff;
+}
+.personalInfo-list form .form-group.sex label{
+  width:50/@r;
+  height: 100%;
+  line-height:70/@r;
+}
+.personalInfo-list form .form-group.sex input{
+  width: 24/@r;
+  height:100%;
+  float: left;
+}
+.personalInfo-list form .form-group span.constellation{
+  position:relative;
+  display: inline-block;
+  width:500/@r;
+  height:100%;
+  float: right;
+}
+.personalInfo-list form .form-group span.constellation select{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: none;
+  height:100%;
+  width:500/@r;
+  border-radius:5/@r;
+  border: none;
+  padding-left:20/@r;
+}
+.personalInfo-list form .form-group span.constellation select:focus{
+  background: #fff;
+  border: 1px solid #94c1e7;
+}
+.personalInfo-list form .form-group textarea{
+  border:none;
+  height:100%;
+  width:500/@r;
+  border-radius:8/@r;
+  padding: 20/@r 0 0 25/@r;
+  float: right;
+  background:none;
+}
+.personalInfo-list form .form-group textarea:focus{
+  background:#fff;
+}
+.personalInfo-list .form-group input.sub{
+  background:deepskyblue;
+  color:#fff;
+  font-size:26/@r;
+}
+//modifyPassword
+.modifyPassword-container .modifyPassword-list{
+  padding:60/@r 30/@r 30/@r 30/@r;
+}
+
+.modifyPassword-list form{
+  background: #f2f2f2;
+  padding-top: 30/@r;
+  display: table;  
+}
+.modifyPassword-list form .form-group{
+  height:100/@r;
+  padding:10/@r 30/@r;
+  margin-top:15/@r;
+}
+.modifyPassword-list form .form-group label{
+  font-size:30/@r;
+  float: left;
+  line-height: 80/@r;
+  text-align:center;
+}
+.modifyPassword-list form .form-group input{
+  border:none;
+  height:100%;
+  width:475/@r;
+  font-size: 20/@r;
+  border-radius:8/@r;
+  padding:0 20/@r;
+  float: right;
+}
+.modifyPassword-list .form-group input.sub{
+  background:deepskyblue;
+  color:#fff;
+  font-size:26/@r;
+  width:100%;
+  margin:80/@r 0 60/@r;
+}
+//videos
+.videos-container .video-cont{
+  padding:15/@r;
+}
+.playVideos{
+  width:710/@r;
+  height:380/@r;
+  margin: 0 auto;
+  margin-top:20/@r;
+  overflow: hidden;
+}
+.video{
+  object-fit: cover;
+}
+#allmap{
+  height: 1264/@r;
+  font-size:28/@r;
+  line-height:40/@r;
+}
+#allmap .BMap_bubble_title{
+  font-weight:bold;
+  margin-bottom: 20/@r;
+}
+.myPhotos-container .myPhotos{
+  padding-top:25/@r;
+}
