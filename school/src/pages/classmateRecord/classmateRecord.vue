@@ -9,8 +9,7 @@
         :to="{path:'detail/',query:{id:index+1}}" 
         tag="li" 
         :key="index">
-          <img v-if="!item.personalInfo.photo" src="/static/images/photo.png" alt="">
-          <img v-else :src="item.personalInfo.photo" alt="">
+          <img :src="item.personalInfo.photo==''?item.personalInfo.photo='/static/images/photo.png':item.personalInfo.photo=item.personalInfo.photo" alt="">
           <i :class="{tag:item.tag}">{{item.tag}}</i>
           <h5>{{item.personalInfo.name}}</h5>
         </router-link>
@@ -27,6 +26,8 @@ export default {
       userData:[],
       title:'同学录',
     }
+  },
+  computed:{
   },
   created(){
     this.queryUserData()

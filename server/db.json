@@ -59,7 +59,7 @@
         "name": "戴婷",
         "photo": "https://goss1.vcg.com/creative/vcg/800/version23/VCG4198593513.jpg",
         "account": "duofuni1",
-        "password": "11e123qwe",
+        "password": "123qwe",
         "sex": "女",
         "phone": "13527890654",
         "weChat": "qazwsx",
@@ -71,7 +71,7 @@
       },
       "photoList": [
         {
-          "time": "2018-06",
+          "time": "2018-7-20",
           "photos": [
             "https://goss1.vcg.com/creative/vcg/800/version23/VCG41476647374.jpg",
             "https://goss2.vcg.com/creative/vcg/800/version23/VCG41476585784.jpg",
@@ -83,10 +83,12 @@
           ]
         },
         {
-          "time": "2018-05",
+          "time": "2018-8-1",
           "photos": [
-            "http://ewm.baiheshequ.cn/uploads/head/1/1458634888369.jpg",
-            "http://ewm.baiheshequ.cn/uploads/head/1/1458634888446.jpg"
+            "https://goss2.vcg.com/creative/vcg/800/new/VCG211159780094.jpg",
+            "http://goss4.vcg.com/creative/vcg/800/new/VCG211160100702.jpg",
+            "http://goss1.vcg.com/creative/vcg/800/new/VCG211160008186.jpg",
+            "http://goss3.vcg.com/creative/vcg/800/new/VCG41N843612370.jpg"
           ]
         }
       ],
@@ -179,9 +181,9 @@
     {
       "personalInfo": {
         "name": "李晓凌",
-        "photo": "",
-        "account": "duofuni5",
-        "password": "123qwe42d",
+        "photo":"",
+        "account": "duofuni",
+        "password": "123qwe",
         "sex": "男",
         "phone": "13527890654",
         "weChat": "qazwsx",
@@ -195,119 +197,6 @@
       "tag": "文艺委员",
       "message": [],
       "id": 5
-    },
-    {
-      "personalInfo": {
-        "name": "多夫尼",
-        "photo": "",
-        "account": "duofuni",
-        "password": "123qwe",
-        "sex": "男",
-        "phone": "13527890654",
-        "weChat": "qazwsx",
-        "QQ": "123456789",
-        "address": "qqq",
-        "constellation": "射手座",
-        "hobby": "qqq",
-        "speciality": "qqq"
-      },
-      "photoList": [],
-      "tag": "",
-      "message": [
-        {
-          "name": "戴婷",
-          "photo": "https://goss1.vcg.com/creative/vcg/800/version23/VCG4198593513.jpg",
-          "time": "2018-7-24",
-          "text": "阿尔噶尔"
-        },
-        {
-          "name": "戴婷",
-          "photo": "https://goss1.vcg.com/creative/vcg/800/version23/VCG4198593513.jpg",
-          "time": "2018-7-24",
-          "text": "和黄世仁讨厌"
-        }
-      ],
-      "id": 6
-    },
-    {
-      "personalInfo": {
-        "name": "地图",
-        "photo": "",
-        "account": "shg44aer",
-        "password": "earge345",
-        "sex": "女",
-        "phone": "13545121212",
-        "weChat": "",
-        "QQ": "",
-        "address": "",
-        "constellation": "0",
-        "hobby": "",
-        "speciality": ""
-      },
-      "photoList": [],
-      "tag": "",
-      "message": [],
-      "id": 7
-    },
-    {
-      "personalInfo": {
-        "name": "十方天华",
-        "photo": "",
-        "account": "sdgh345",
-        "password": "sr45srd4",
-        "sex": "男",
-        "phone": "13562658954",
-        "weChat": "",
-        "QQ": "",
-        "address": "",
-        "constellation": "0",
-        "hobby": "",
-        "speciality": ""
-      },
-      "photoList": [],
-      "tag": "",
-      "message": [],
-      "id": 8
-    },
-    {
-      "personalInfo": {
-        "name": "安抚",
-        "photo": "",
-        "account": "aserf23",
-        "password": "aerafe23",
-        "sex": "女",
-        "phone": "13509876543",
-        "weChat": "",
-        "QQ": "",
-        "address": "",
-        "constellation": "0",
-        "hobby": "",
-        "speciality": ""
-      },
-      "photoList": [],
-      "tag": "",
-      "message": [],
-      "id": 9
-    },
-    {
-      "personalInfo": {
-        "name": "淀粉",
-        "photo": "",
-        "account": "aerfg23",
-        "password": "sedf243",
-        "sex": "女",
-        "phone": "13533333333",
-        "weChat": "",
-        "QQ": "",
-        "address": "",
-        "constellation": "0",
-        "hobby": "",
-        "speciality": ""
-      },
-      "photoList": [],
-      "tag": "",
-      "message": [],
-      "id": 10
     }
   ]
 }

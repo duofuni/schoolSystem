@@ -1,3 +1,8 @@
+/** 
+ * @description [form verification]
+ * @author duofuni
+ */
+
 const regExp = {
   _name:/^[\u4e00-\u9fa5]+(·[\u4e00-\u9fa5]+)*$/,
   _account:/^[a-zA-z]\w{3,15}$/,

@@ -1,4 +1,9 @@
 import type from '@/utils/_typeOf/type'
+/** 
+ * @description [localStorage]
+ * @author duofuni
+ */
+
 class Storage {
     _isSupport = !!localStorage
     constructor () {}

@@ -1,3 +1,8 @@
+/** 
+ * @description [using Object.prototype.toString.call for data type validation]
+ * @author duofuni
+ */
+
 class Type{
   _types = [
     'String',

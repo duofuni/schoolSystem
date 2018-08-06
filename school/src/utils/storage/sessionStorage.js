@@ -1,4 +1,10 @@
 import type from '@/utils/_typeOf/type'
+
+/** 
+ * @description [sessionStorage]
+ * @author duofuni
+ */
+
 class Storage {
     _isSupport = !!sessionStorage
     constructor () {}

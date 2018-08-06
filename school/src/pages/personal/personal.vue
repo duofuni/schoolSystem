@@ -3,7 +3,7 @@
     <backBar :title="title"></backBar>
     <div class="detail-header" style="backgroundImage:url('/static/images/personal_banner.png')">
       <div class="head" v-if="isLogin">
-        <img :src="myInfo.personalInfo.photo" alt="">
+        <img @click="operation" :src="url" alt="">
         <i>{{myInfo.personalInfo.name}}</i>
       </div>
       <button @click="quit" class="quit">退出</button>
@@ -20,11 +20,13 @@
       </router-link>
     </div>
     <alert :warning="warning" @off="close"></alert>
+    <operatingHeadImg :ShowHeadImg="ShowHeadImg" :url="url" @off="cancel"></operatingHeadImg>
   </div>
 </template>
 <script>
 import backBar from '@/components/backBar'
 import alert from '@/components/alert'
+import operatingHeadImg from '@/components/operatingHeadImg'
 import S_Storage from '@/utils/storage/sessionStorage'
 export default {
   data() {
@@ -36,21 +38,31 @@ export default {
         {img:'myMessage',text:'同学留言',path:'myQuotation'},
         {img:'modifyPassword',text:'修改密码',path:'modifyPassword'}
       ],
+      ShowHeadImg:false,
       warning:'',
       time:3
     }
   },
   computed:{
+    url(){
+      let _photo=this.myInfo.personalInfo.photo
+      _photo==''?_photo='/static/images/photo.png':_photo=this.myInfo.personalInfo.photo
+      return _photo
+    },
     myInfo(){
-      return S_Storage.getSession("userInfo")
+      return this.$store.getters.getUserInfo
     },
     isLogin(){
       return S_Storage.getSession("isLogin")
     }
   },
   created(){
+    this.qustData()
   },
   methods:{
+    qustData(){
+      this.$store.commit("updateData")
+    },
     quit(){
       S_Storage.clearSession('userInfo')
       let timer=setInterval(()=>{
@@ -65,11 +77,18 @@ export default {
     },
     close(){
       this.warning=''
+    },
+    cancel(){
+      this.ShowHeadImg=!this.ShowHeadImg
+    },
+    operation(){
+      this.ShowHeadImg=!this.ShowHeadImg
     }
   },
   components:{
     backBar,
-    alert
+    alert,
+    operatingHeadImg
   }
 }
 </script>
