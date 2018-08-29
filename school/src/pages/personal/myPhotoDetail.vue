@@ -1,7 +1,7 @@
 <template>
-  <div v-if="myInfo.photoList" class="myPhotoDetail-container">
-    <backBar :title="title"></backBar>
-    <img @click="next" :src="src" alt="">
+  <div v-if = "myInfo.photoList" class = "myPhotoDetail-container">
+    <backBar :title = "title"></backBar>
+    <img @click = "next" :src = "src" alt = "">
   </div>
 </template>
 <script>
@@ -10,35 +10,35 @@ import S_Storage from '@/utils/storage/sessionStorage'
 export default {
   data() {
     return {
-      itemId:this.$route.query.itemId,
-      group:this.$route.query.group,
-      id:this.$route.query.id,
+      itemId: this.$route.query.itemId,
+      group: this.$route.query.group,
+      id: this.$route.query.id,
     }
   },
-  computed:{
+  computed: {
     myInfo(){
       return S_Storage.getSession("userInfo")
     },
-    title(){
+    title() {
       return this.myInfo.photoList[this.group].time
     },
-    src(){
+    src() {
       return this.myInfo.photoList[this.group].photos[this.id]
     }
   },
   created(){
   },
-  methods:{
+  methods: {
     next(){
-      if(this.id<this.myInfo.photoList[this.group].photos.length-1){
-        this.id+=1
+      if (this.id < this.myInfo.photoList[this.group].photos.length - 1) {
+        this.id += 1
       }
     }
   },
-  components:{
+  components: {
     backBar
   }
 }
 </script>
-<style lang="less">
+<style lang = "less">
 </style>

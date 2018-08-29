@@ -1,5 +1,5 @@
 import type from '@/utils/_typeOf/type'
-/** 
+/**
  * @description [localStorage]
  * @author duofuni
  */
@@ -12,12 +12,12 @@ class Storage {
             return console.error('当前浏览器不支持local存储！')
         }
         if (!type.isString(key)) {
-            return console.error(`${key} is not string！`)
+            return console.error(`${ key } is not string！`)
         }
         // 存储失败
-        if (!type.isObject(value) && 
-            !type.isArray(value) && 
-            !type.isString(value) && 
+        if (!type.isObject(value) &&
+            !type.isArray(value) &&
+            !type.isString(value) &&
             !type.isBoolean(value) &&
             !type.isNumber(value)) {
             return false

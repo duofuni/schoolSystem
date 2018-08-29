@@ -1,10 +1,10 @@
 <template>
-  <div class="nav-container">
+  <div class = "nav-container">
     <ul>
-      <li class="f-l" v-for="(item,index) in imgUrl.length" :key="index">
+      <li class = "f-l" v-for = "(item,index) in imgUrl.length" :key = "index">
         <router-link :to="'/'+imgUrl[index].icon">
-          <i 
-          :style="{backgroundImage:'url(static/images/'+ imgUrl[index].icon + '.png)'}"></i>
+          <i
+          :style = "{backgroundImage:'url(static/images/'+ imgUrl[index].icon + '.png)'}"></i>
           <span>{{imgUrl[index].name}}</span>
         </router-link>
       </li>
@@ -29,5 +29,5 @@ export default {
   },
 }
 </script>
-<style lang="less">
+<style lang = "less">
 </style>

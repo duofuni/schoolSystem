@@ -1,4 +1,4 @@
-/** 
+/**
  * @description [using Object.prototype.toString.call for data type validation]
  * @author duofuni
  */
@@ -7,17 +7,17 @@ class Type{
   _types = [
     'String',
     'Number',
-    'Boolean', 
-    'Object', 
+    'Boolean',
+    'Object',
     'Array',
     'Function',
     'Undefined',
     'Null'
   ]
-  constructor(){
+  constructor() {
     this._checkType(this._types)
   }
-  _checkType(_types){
+  _checkType(_types) {
     _types.forEach((_type) => {
       this[`is${_type}`] = (param) =>{
         return Object.prototype.toString.call(param).slice(8,-1) === _type

@@ -23,31 +23,31 @@ import MyPhotos from '@/pages/personal/myPhotos'
 import MyPhotoDetail from '@/pages/personal/myPhotoDetail'
 import MyQuotation from '@/pages/personal/myQuotation'
 import ModifyPassword from '@/pages/personal/modifyPassword'
-const routes=[
-  {path:'/',name:'home',component:Home},
-  {path:'/login',name:'login',component:Login},
-  {path:'/register',name:'register',component:Register},
-  {path:'/schoolIntro',name:'schoolIntro',component:SchoolIntro},
-  {path:'/teacherRecord',name:'teacherRecord',component:TeacherRecord},
-  {path:'/classmateRecord',name:'classmateRecord',component:ClassmateRecord},
-  {path:'/location',name:'location',component:Location},
-  {path:'/detail',name:'detail',component:Detail},
-  {path:'/photoDetail',name:'photoDetail',component:PhotoDetail},
-  {path:'/release',name:'release',component:Release},
-  {path:'/classPhotos',name:'classPhotos',component:ClassPhotos},
-  {path:'/videos',name:'videos',component:Videos},
-  {path:'/playVideo',name:'playVideo',component:PlayVideo},
-  {path:'/personal',name:'personal',component:Personal},
-  {path:'/myInfo',name:'myInfo',component:MyInfo},
-  {path:'/myPhotos',name:'myPhotos',component:MyPhotos},
-  {path:'/myPhotoDetail',name:'myPhotoDetail',component:MyPhotoDetail},
-  {path:'/myQuotation',name:'myQuotation',component:MyQuotation},
-  {path:'/modifyPassword',name:'modifyPassword',component:ModifyPassword},
-  {path:'*',redirect:'/'}
+const routes = [
+  { path: '/', name: 'home', component: Home },
+  { path: '/login', name: 'login', component: Login },
+  { path: '/register', name: 'register', component: Register },
+  { path: '/schoolIntro', name: 'schoolIntro', component: SchoolIntro },
+  { path: '/teacherRecord', name: 'teacherRecord', component: TeacherRecord },
+  { path: '/classmateRecord', name: 'classmateRecord', component: ClassmateRecord },
+  { path: '/location', name: 'location', component: Location },
+  { path: '/detail', name: 'detail', component: Detail },
+  { path: '/photoDetail', name: 'photoDetail', component: PhotoDetail },
+  { path: '/release', name: 'release', component: Release },
+  { path: '/classPhotos', name: 'classPhotos', component: ClassPhotos },
+  { path: '/videos', name: 'videos', component: Videos },
+  { path: '/playVideo', name: 'playVideo', component: PlayVideo },
+  { path: '/personal', name: 'personal', component: Personal },
+  { path: '/myInfo', name: 'myInfo', component: MyInfo },
+  { path: '/myPhotos', name: 'myPhotos', component: MyPhotos },
+  { path: '/myPhotoDetail', name: 'myPhotoDetail', component: MyPhotoDetail },
+  { path: '/myQuotation', name: 'myQuotation', component: MyQuotation },
+  { path: '/modifyPassword', name: 'modifyPassword', component: ModifyPassword },
+  { path: '*', redirect:'/' }
 ]
 
-const router=new VueRouter({
-  mode:'history',
+const router = new VueRouter({
+  mode: 'history',
   routes
 })
 router.beforeEach(function (to, from, next) {

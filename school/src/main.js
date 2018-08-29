@@ -13,8 +13,8 @@ import iscroll from 'iscroll'
 import Flexible from '@/utils/adaptation/flexible'
 Vue.use(VueAwesomeSwiper)
 Vue.use(iscrollView, iscroll)
-axios.defaults.baseURL='http://localhost:3004/'
-Vue.prototype.$axios=axios
+axios.defaults.baseURL = 'http://localhost:3004/'
+Vue.prototype.$axios = axios
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

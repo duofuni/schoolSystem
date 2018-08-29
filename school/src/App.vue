@@ -1,6 +1,6 @@
 <template>
-  <div id="app">
-    <!-- <iscroll-view :options="{preventDefault: false}" class="scroll-view"> -->
+  <div id = "app">
+    <!-- <iscroll-view :options = "{preventDefault: false}" class="scroll-view"> -->
       <router-view></router-view>
     <!-- </iscroll-view>             -->
   </div>

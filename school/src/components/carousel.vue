@@ -1,17 +1,17 @@
 <template>
-  <swiper :options="swiperOption"  ref="mySwiper">
+  <swiper :options = "swiperOption"  ref = "mySwiper">
     <!-- 这部分放你要渲染的那些内容 -->
     <swiper-slide>
-      <img src="http://pic2.ooopic.com/12/42/25/02bOOOPIC95_1024.jpg" alt="">
+      <img src = "http://pic2.ooopic.com/12/42/25/02bOOOPIC95_1024.jpg" alt = "">
     </swiper-slide>
     <swiper-slide>
-      <img src="http://img3.imgtn.bdimg.com/it/u=2687172757,261921406&fm=27&gp=0.jpg" alt="">
+      <img src = "http://img3.imgtn.bdimg.com/it/u=2687172757,261921406&fm=27&gp=0.jpg" alt = "">
     </swiper-slide>
     <swiper-slide>
-      <img src="http://pic1.16pic.com/00/04/78/16pic_478386_b.jpg" alt="">
+      <img src = "http://pic1.16pic.com/00/04/78/16pic_478386_b.jpg" alt = "">
     </swiper-slide>
     <!-- 这是轮播的小圆点 -->
-    <div class="swiper-pagination"  slot="pagination">
+    <div class = "swiper-pagination"  slot = "pagination">
     </div>
   </swiper>
 </template>
@@ -22,16 +22,16 @@ export default {
   data() {
     return {
       swiperOption: {
-        notNextTick: true,       
+        notNextTick: true,
         pagination: {
           el: '.swiper-pagination',
-          clickable :true,
+          clickable: true,
         },
         autoplay: 2000,
       }
     }
   },
-  methods:{
+  methods: {
   },
   components: {
     swiper,
@@ -39,5 +39,5 @@ export default {
   }
 }
 </script>
-<style lang="less">
+<style lang = "less">
 </style>

@@ -1,7 +1,7 @@
 <template>
-  <div class="classPhotos-container">
-    <backBar :title="title"></backBar>
-    <div class="classPhotos-list">
+  <div class = "classPhotos-container">
+    <backBar :title = "title"></backBar>
+    <div class = "classPhotos-list">
     </div>
   </div>
 </template>
@@ -10,10 +10,10 @@ import backBar from '@/components/backBar'
 export default {
   data() {
     return {
-      title:'班级相册',
+      title: '班级相册',
     }
   },
-  computed:{
+  computed: {
   },
   created(){
   },
@@ -24,6 +24,6 @@ export default {
   }
 }
 </script>
-<style lang="less">
+<style lang = "less">
 
 </style>
