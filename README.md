@@ -1,18 +1,22 @@
 # schoolSystem
-一个vue2.0全家桶app项目,schoolSystem2.0
+<a href="">测试</a>
+############################################环境依赖
+node
 
-vue2.0全家桶实战app，包含以下内容：
+#################################部署步骤
 
-vue2.0  
-vuex  
-axios  
-vue-router  
-flexible.js（适配）  
-HTML5 web存储  
-HTML5 FileReader  
+vue2.0+express+mongoDB实现一个前后端打通的app项目
+前端技术部分包含以下：
+
+总体：vue2.0  
+请求：axios  
+路由：vue-router  
+表单验证：vue vuelidate  
+适配：flexible.js  
+缓存：HTML5 web  
+图片上传预览：HTML5 FileReader  
 百度地图api  
-vue-cropper  
-vue-awesome-swiper  
-less  
-rem  
-json-server(模拟数据)   
+图片裁剪：vue-cropper  
+幻灯片插件：vue-awesome-swiper  
+css框架：less，rem  
+
