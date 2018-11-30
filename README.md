@@ -32,7 +32,7 @@
                 <ul>  
                     <li>总体：express</li>
                     <li>数据库：MongoDB</li>
-                    <li>MongoDB对象模型工具：mongoose</li>
+                    <li>MongoDB对象模型工具：Mongoose</li>
                     <li>图片上传：Multer中间件</li>
                     <li>加密：bcrypt</li>
                     <li>跨域认证解决方案：jsonwebtoken</li>
@@ -42,31 +42,31 @@
         <li>
             <a href="">
                 <h2>##环境依赖</h2>
-                <ul>
-                    <li>node</li>
-                </ul>
             </a>
+            <ul>
+                <li>node</li>
+            </ul>
         </li>
         <li>
             <a href="">
                 <h2>##部署步骤</h2>
-                <ul>
-                    <li>前端：  
-                        <ol>
-                            <li>安装依赖——> cnpm i</li>
-                            <li>运行——> cnpm run dev</li>
-                        </ol>  
-                    </li>
-                    <li>后端：  
-                        <ol>
-                            <li>安装依赖——> cnpm i</li>
-                            <li>下载mongoDB：<a href="https://www.mongodb.com/download-center#community">https://www.mongodb.com/download-center#community</a></li>
-                            <li>初始化数据到数据库——> 命令行切换到database->seeds->init.js 然后执行：node init.js<li>
-                            <li>安装依赖——> cnpm run server </li>
-                        </ol>  
-                    </li>
-                </ul>
             </a>
+            <ul>
+                <li>前端：  
+                    <ol>
+                        <li>安装依赖——> cnpm i</li>
+                        <li>运行——> cnpm run dev</li>
+                    </ol>  
+                </li>
+                <li>后端：  
+                    <ol>
+                        <li>安装依赖——> cnpm i</li>
+                        <li>下载mongoDB：<a href="https://www.mongodb.com/download-center#community">https://www.mongodb.com/download-center#community</a></li>
+                        <li>初始化数据到数据库——> 命令行切换到database->seeds->init.js 然后执行：node init.js<li>
+                        <li>安装依赖——> cnpm run server </li>
+                    </ol>  
+                </li>
+            </ul>
         </li>
     </ul>
 </div>
