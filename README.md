@@ -12,7 +12,7 @@
                 <h2>##技术栈</h2>
             </a>
             <div>
-                <h2>##前端</h2>
+                <h4>##前端</h4>
                 <ul>  
                     <li>总体：vue2.0</li>
                     <li>请求：axios</li>
@@ -28,7 +28,7 @@
                 </ul>
             <div>
             <div>
-                <h2>##后端</h2>
+                <h4>##后端</h4>
                 <ul>  
                     <li>总体：express</li>
                     <li>数据库：MongoDB</li>
