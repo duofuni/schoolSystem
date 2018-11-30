@@ -1,11 +1,13 @@
 <template>
-  <div v-if = "classmateInfo.photoList" class = "photoDetail-container">
-    <backBar :title = "title"></backBar>
-    <img @click = "next" :src = "src" alt = "">
+  <div v-if="classmateInfo.photoList" class="photoDetail-container">
+    <backBar :title="title"></backBar>
+    <img @click="handleNext" :src="src" alt="">
   </div>
 </template>
 <script>
 import backBar from '@/components/backBar'
+import S_Storage from '@/utils/storage/sessionStorage'
+
 export default {
   data() {
     return {
@@ -16,35 +18,26 @@ export default {
   },
   computed: {
     classmateInfo() {
-      return this.$store.getters.getClassmateInfo
+      return S_Storage.getSession('classmateInfo');
     },
     title() {
-      return this.classmateInfo.photoList[ this.group ].time
+      return this.classmateInfo.photoList[this.group].time;
     },
     src() {
-      return this.classmateInfo.photoList[ this.group ].photos[ this.id ]
-    }
-  },
-  created() {
-    this.qustClassmate()
+      return this.classmateInfo.photoList[this.group].photos[this.id];
+    },
   },
   methods: {
-    qustClassmate() {
-      this.$axios.get( 'userData/' + this.itemId )
-        .then((data) => {
-          this.$store.commit( 'storageClassmate', data.data )
-        })
-    },
-    next() {
-      if (this.id < this.classmateInfo.photoList[ this.group ].photos.length - 1) {
-        this.id += 1
+    handleNext() {
+      if (this.id < this.classmateInfo.photoList[this.group].photos.length - 1) {
+        this.id += 1;
       }
-    }
+    },
   },
   components: {
-    backBar
-  }
+    backBar,
+  },
 }
 </script>
-<style lang = "less">
+<style lang="less">
 </style>

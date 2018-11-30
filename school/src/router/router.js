@@ -1,77 +1,46 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import store from '../store/store'
-import S_Storage from '@/utils/storage/sessionStorage'
+
 Vue.use(VueRouter)
 
-import Home from '@/pages/home/home'
-import Login from '@/pages/login/login'
-import Register from '@/pages/register/register'
-import SchoolIntro from '@/pages/schoolIntro/schoolIntro'
-import TeacherRecord from '@/pages/teacherRecord/teacherRecord'
-import ClassmateRecord from '@/pages/classmateRecord/classmateRecord'
-import Detail from '@/pages/classmateRecord/detail'
-import PhotoDetail from '@/pages/classmateRecord/photoDetail'
-import Release from '@/components/release'
-import Location from '@/pages/location/location'
-import ClassPhotos from '@/pages/classPhotos/classPhotos'
-import Videos from '@/pages/video/videos'
-import PlayVideo from '@/pages/video/playVideo'
-import Personal from '@/pages/personal/personal'
-import MyInfo from '@/pages/personal/myInfo'
-import MyPhotos from '@/pages/personal/myPhotos'
-import MyPhotoDetail from '@/pages/personal/myPhotoDetail'
-import MyQuotation from '@/pages/personal/myQuotation'
-import ModifyPassword from '@/pages/personal/modifyPassword'
 const routes = [
-  { path: '/', name: 'home', component: Home },
-  { path: '/login', name: 'login', component: Login },
-  { path: '/register', name: 'register', component: Register },
-  { path: '/schoolIntro', name: 'schoolIntro', component: SchoolIntro },
-  { path: '/teacherRecord', name: 'teacherRecord', component: TeacherRecord },
-  { path: '/classmateRecord', name: 'classmateRecord', component: ClassmateRecord },
-  { path: '/location', name: 'location', component: Location },
-  { path: '/detail', name: 'detail', component: Detail },
-  { path: '/photoDetail', name: 'photoDetail', component: PhotoDetail },
-  { path: '/release', name: 'release', component: Release },
-  { path: '/classPhotos', name: 'classPhotos', component: ClassPhotos },
-  { path: '/videos', name: 'videos', component: Videos },
-  { path: '/playVideo', name: 'playVideo', component: PlayVideo },
-  { path: '/personal', name: 'personal', component: Personal },
-  { path: '/myInfo', name: 'myInfo', component: MyInfo },
-  { path: '/myPhotos', name: 'myPhotos', component: MyPhotos },
-  { path: '/myPhotoDetail', name: 'myPhotoDetail', component: MyPhotoDetail },
-  { path: '/myQuotation', name: 'myQuotation', component: MyQuotation },
-  { path: '/modifyPassword', name: 'modifyPassword', component: ModifyPassword },
-  { path: '*', redirect:'/' }
-]
+  {path: '/', name: 'home', component: () => import('@/pages/home/home')},
+  {path: '/login', name: 'login', component: () => import('@/pages/login/login')},
+  {path: '/register', name: 'register', component: () => import('@/pages/register/register')},
+  {path: '/schoolIntro', name: 'schoolIntro', component: () => import('@/pages/schoolIntro/schoolIntro')},
+  {path: '/teacherRecord', name: 'teacherRecord', component: () => import('@/pages/teacherRecord/teacherRecord')},
+  {path: '/classmateRecord', name: 'classmateRecord', component: () => import('@/pages/classmateRecord/classmateRecord')},
+  {path: '/location', name: 'location', component: () => import('@/pages/location/location')},
+  {path: '/detail', name: 'detail', component: () => import('@/pages/classmateRecord/detail')},
+  {path: '/photoDetail', name: 'photoDetail', component: () => import('@/pages/classmateRecord/photoDetail')},
+  {path: '/release', name: 'release', component: () => import('@/components/release')},
+  {path: '/classPhotos', name: 'classPhotos', component: () => import('@/pages/classPhotos/classPhotos')},
+  {path: '/videos', name: 'videos', component: () => import('@/pages/video/videos')},
+  {path: '/playVideo', name: 'playVideo', component: () => import('@/pages/video/playVideo')},
+  {path: '/personal', name: 'personal', component: () => import('@/pages/personal/personal')},
+  {path: '/myInfo', name: 'myInfo', component: () => import('@/pages/personal/myInfo')},
+  {path: '/myPhotos', name: 'myPhotos', component: () => import('@/pages/personal/myPhotos')},
+  {path: '/myPhotoDetail', name: 'myPhotoDetail', component: () => import('@/pages/personal/myPhotoDetail')},
+  {path: '/myQuotation', name: 'myQuotation', component: () => import('@/pages/personal/myQuotation')},
+  {path: '/modifyPassword', name: 'modifyPassword', component: () => import('@/pages/personal/modifyPassword')},
+ // {path: '*', redirect:'/'},
+];
 
 const router = new VueRouter({
   mode: 'history',
-  routes
+  routes,
 })
-router.beforeEach(function (to, from, next) {
-  const nextRoute = [
-    'personal',
-    'myQuotation',
-    'album',
-    'classmateRecord',
-    'teacherRecord',
-    'videos',
-    'modifyPassword',
-    'location'
-    ];
-  const isLogin = S_Storage.getSession("isLogin")
-  if (nextRoute.indexOf(to.name) >= 0) {
-    if (!isLogin) {
-      router.push({name: 'login'})
+router.beforeEach(({name}, from, next) => {
+  if (name === 'login' || name === 'register') {
+    next()
+  } else {
+    const token = sessionStorage.getItem('x_access_token');
+    if (token) {
+      next()
+    } else {
+      next('/login')
     }
   }
-  if (to.name === 'login') {
-    if (isLogin) {
-      router.push({name: 'home'});
-    }
-  }
-  next();
 })
+
 export default router

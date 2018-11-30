@@ -1,8 +1,6 @@
 <template>
-  <div id = "app">
-    <!-- <iscroll-view :options = "{preventDefault: false}" class="scroll-view"> -->
-      <router-view></router-view>
-    <!-- </iscroll-view>             -->
+  <div id="app">
+    <router-view></router-view>
   </div>
 </template>
 
@@ -24,8 +22,5 @@ export default {
   bottom: 0;
   left: 0;
   right: 0;
-}
-.scroll-view>div{
-  /*height: 101%;*/
 }
 </style>

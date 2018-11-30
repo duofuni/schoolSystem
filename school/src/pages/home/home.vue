@@ -15,13 +15,11 @@ import classVideos from '@/components/classVideos'
 
 export default {
   name: 'home',
-  created(){
-  },
   components: {
     carousel,
     loginBar,
     navigation,
-    classVideos
+    classVideos,
   }
 }
 </script>

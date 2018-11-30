@@ -1,9 +1,9 @@
 <template>
-  <div class = "alert-container">
-    <div class = "alert mask" v-show = "warning">
-      <div class = "alert-cont">
-        <i style = "color:red;" class = "text">{{warning}}</i>
-        <button @click = "close" class = "btn">确定</button>
+  <div class="alert-container">
+    <div class="alert mask" v-show="warning">
+      <div class="alert-cont">
+        <i style="color:red;" class="text">{{warning}}</i>
+        <button @click="handleClose" class="btn">确定</button>
       </div>
     </div>
   </div>
@@ -15,12 +15,12 @@ export default {
     }
   },
   methods: {
-    close() {
-      this.$emit("off")
+    handleClose() {
+      this.$emit('off');
     }
   },
-  props: ["warning"]
+  props: ['warning'],
 }
 </script>
-<style lang = "less">
+<style lang="less">
 </style>

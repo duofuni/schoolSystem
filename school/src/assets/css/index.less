@@ -166,18 +166,25 @@ textarea,input,select{
   color:#ffffff;
   display:block;
 }
-.login-container .login-icon{
-  width:100%;
-  height:680/@r;
-  opacity: 0.8;
-}
 .login-container .login-form{
-  background-color: #f2f2f2;
-  width: 100%;
-  border: 1px solid #d7d7d7;
+  padding:65/@r 50/@r;
+  background-color: #020202;
+  width: 95%;
+  border: 1px solid #5f5d5d;
   border-left: none;
   border-right: none;
-  padding:65/@r 50/@r;
+  opacity: 0.8;
+  color: #fff;
+  margin: 0 auto;
+  margin-top: 600/@r;
+  border-radius: 10/@r;
+}
+.container.login-container{
+  background: url(/static/images/login_bg.png);
+  background-position: 85% 100%;
+  background-size: 112%;
+  height: 112%;
+  background-repeat: no-repeat;
 }
 .login-container .login-form .form-group{
   width:100%;
@@ -196,7 +203,7 @@ textarea,input,select{
   background:#ffffff;
   padding:16/@r 25/@r;
   margin-left: 50/@r;
-  width:75%;
+  width:80%;
   border:1px solid #cfcfcf;
   outline: none;
   font-size:28/@r;
@@ -212,6 +219,7 @@ textarea,input,select{
   margin:0;
   font-weight: bold;
 }
+
 .register-btn{
   font-size:26/@r;
   color:#4a535c;
@@ -402,7 +410,7 @@ textarea,input,select{
   width:490/@r;
 }
 .teacher-container .teacher-record .teacher-record-info p{
-  font-size:20/@r;
+  font-size:28/@r;
   color:#797979;
   line-height:48/@r;
 }
@@ -416,7 +424,7 @@ textarea,input,select{
   float: right;
   border: 1px solid #cfcfcf;
   background:#fff;
-  font-size:22/@r;
+  font-size:26/@r;
   border-radius:10/@r;
   padding:0 10/@r;
 }
@@ -446,7 +454,7 @@ textarea,input,select{
 }
 .classmateRecord-container .classmateRecord ul li img{
   width: 65%;
-  height: 65%;
+  height: 165/@r;
   border-radius: 50%;
 }
 .tag{
@@ -478,6 +486,7 @@ textarea,input,select{
 }
 .classmateRecord-container .detail-header .head img{
   width:100%;
+  height: 165/@r;
   margin-bottom:20/@r;
   border-radius:100%;
 }
@@ -598,7 +607,8 @@ textarea,input,select{
   height:350/@r;
   padding:20/@r;
   border:none;
-  font-size:22/@r;
+  margin-top: 20/@r;
+  font-size:28/@r;
 }
 .release-container .release form .form-group label{
   width:100%;
@@ -671,7 +681,7 @@ textarea,input,select{
   left:0;
   top: 0;
   display:inline-block;
-  width:32%;
+  width:34%;
   height:76/@r;
   padding:28/@r 0 0 75/@r;
   background-color:deepskyblue;
@@ -683,7 +693,7 @@ textarea,input,select{
 .up-load input{
   opacity: 0;
   display:inline-block;
-  width:32%;
+  width:34%;
   height:100%;
   position:absolute;
   left:0;
@@ -727,6 +737,7 @@ textarea,input,select{
   color: rgba(255,255,255,.8);
   border-radius: 50%;
   outline:none;
+  font-size:28/@r;
 }
 .personal-container .detail-header .head i{
   font-size:30/@r;
@@ -761,16 +772,22 @@ textarea,input,select{
 //register
 .register-container{
   position: relative;
+  background: url(/static/images/register_bg.png);
+  background-position: 85% 100%;
+  background-size: 112%;
+  background-repeat: no-repeat;
 }
 .register-container .register-form{
   padding:28/@r;
 }
 .register-container .register-form form .form-group{
-  background-color:#f2f2f2;
+  background-color:#020202;
   margin-top: 15/@r;
   height:95/@r;
   border-radius:10/@r;
   padding:10/@r 30/@r;
+  opacity: 0.6;
+  color: #fff;
 }
 .register-container .register-form form .form-group.register input{
   width:100%;
@@ -794,6 +811,7 @@ textarea,input,select{
   border-radius:8/@r;
   padding:0 20/@r;
   float: right;
+  font-size: 28/@r;
 }
 .register-form form .form-group textarea{
   border:none;
@@ -802,6 +820,7 @@ textarea,input,select{
   border-radius:8/@r;
   padding: 20/@r;
   float: right;
+  font-size: 28/@r;
 }
 .register-form form .form-group span.constellation{
   position:relative;
@@ -827,6 +846,9 @@ span.constellation::after {
   border-radius: 0 6px 6px 0;
   pointer-events: none;
 }
+.register-form form .form-group span.constellation select option{
+  font-size: 18/@r;
+}
 .register-form form .form-group span.constellation select{
   position: absolute;
   top: 0;
@@ -837,6 +859,7 @@ span.constellation::after {
   width:100%;
   border-radius:5/@r;
   border: 1px solid #94c1e7;
+  font-size: 28/@r;
 }
 .register-form form .form-group input.sub{
   background:deepskyblue;
@@ -846,7 +869,7 @@ span.constellation::after {
 .register-form form .form-group.sex label{
   width:50/@r;
   height: 100%;
-  line-height:70/@r;
+  line-height: 80/@r;
 }
 .register-form form .form-group.sex input{
   width: 24/@r;
@@ -883,6 +906,7 @@ span.constellation::after {
   background:none;
   padding:0 20/@r 0 30/@r;
   float: right;
+  font-size: 28/@r;
 }
 .personalInfo-list form .form-group input:focus{
   background:#fff;
@@ -915,6 +939,7 @@ span.constellation::after {
   border-radius:5/@r;
   border: none;
   padding-left:20/@r;
+  font-size: 28/@r;
 }
 .personalInfo-list form .form-group span.constellation select:focus{
   background: #fff;
@@ -928,6 +953,7 @@ span.constellation::after {
   padding: 20/@r 0 0 25/@r;
   float: right;
   background:none;
+  font-size: 28/@r;
 }
 .personalInfo-list form .form-group textarea:focus{
   background:#fff;

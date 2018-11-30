@@ -1,9 +1,9 @@
 <template>
-  <header class = "top-header">
+  <header class="top-header">
     <em
-    @click = "back"
-    style = "background-image:url('/static/images/back_icon.png');"></em>
-    <div class = "topBar">
+      @click="handleBack"
+      style="background-image:url('/static/images/back_icon.png');"></em>
+    <div class="topBar">
       <span>{{title}}</span>
     </div>
   </header>
@@ -15,12 +15,12 @@ export default {
     }
   },
   methods: {
-    back() {
-      this.$router.go(-1)
-    }
+    handleBack() {
+      this.$router.go(-1);
+    },
   },
-  props: ["title"]
+  props: ['title'],
 }
 </script>
-<style lang = "less">
+<style lang="less">
 </style>
