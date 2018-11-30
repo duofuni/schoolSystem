@@ -3,16 +3,16 @@
 
 vue2.0全家桶实战app，包含以下内容：
 
-vue2.0,
-vuex,
-axios,
-vue-router,
-flexible.js（适配）,
-HTML5 web存储,
-HTML5 FileReader,
-百度地图api,
-vue-cropper,
-vue-awesome-swiper,
-less,
-rem
-json-server(模拟数据),
+vue2.0  
+vuex  
+axios  
+vue-router  
+flexible.js（适配）  
+HTML5 web存储  
+HTML5 FileReader  
+百度地图api  
+vue-cropper  
+vue-awesome-swiper  
+less  
+rem  
+json-server(模拟数据)   
