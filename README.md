@@ -7,7 +7,6 @@
             </a>
             <div>vue2.0+express+mongoDB实现一个前后端打通的app项目<div>
         </li>
-___________________________________________________________________________________________
         <li>
             <a href="">
                 <h2>##技术栈</h2>
@@ -53,15 +52,18 @@ ________________________________________________________________________________
                 <h2>##部署步骤</h2>
                 <ul>
                     <li>前端：  
-                        ~~~~安装依赖——> cnpm i  
-                        ~~~~运行——>     cnpm run dev  
+                        <ol>
+                            <li>安装依赖——> cnpm i</li>
+                            <li>运行——> cnpm run dev</li>
+                        </ol>  
                     </li>
                     <li>后端：  
-                        ~~~~安装依赖——> cnpm i  
-                        ~~~~初始化数据到数据库——>  
-                            命令行切换到database->seeds->init.js  
-                            node init.js  
-                        ~~~~安装依赖——> cnpm run server 
+                        <ol>
+                            <li>安装依赖——> cnpm i</li>
+                            <li>下载mongoDB：<a href="https://www.mongodb.com/download-center#community">https://www.mongodb.com/download-center#community</a></li>
+                            <li>初始化数据到数据库——> 命令行切换到database->seeds->init.js 然后执行：node init.js<li>
+                            <li>安装依赖——> cnpm run server </li>
+                        </ol>  
                     </li>
                 </ul>
             </a>
