@@ -36,6 +36,7 @@ export default {
       var point = new BMap.Point(104.088032,30.662863);
       map.centerAndZoom(point,12);
       function myFun(result){
+        console.log(result);
         var cityName = result.name;
         map.setCenter(cityName);
         _this.title = '我的位置:  ' + cityName;

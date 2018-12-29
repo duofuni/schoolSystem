@@ -31,7 +31,7 @@ import backBar from '@/components/back_bar'
 import S_Storage from '@/utils/storage/session_storage'
 import alert from '@/components/alert'
 import { required, sameAs } from 'vuelidate/lib/validators';
-const mustBePassword = value => /^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,14}$/.test(value);
+import { mustBePassword } from '@/utils/custom_validators'
 
 export default {
   data() {

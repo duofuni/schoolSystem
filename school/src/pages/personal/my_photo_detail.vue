@@ -1,5 +1,5 @@
 <template>
-  <div v-if="myInfo.photoList" class="myPhoto-detail-container">
+  <div v-if="myInfo.photoList" class="my-photo-detail-container">
     <backBar :title="title"></backBar>
     <img @click="handleNext" :src="src" alt="">
   </div>

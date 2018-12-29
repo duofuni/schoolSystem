@@ -33,9 +33,7 @@
 <script>
 import backBar from '@/components/back_bar'
 import S_Storage from '@/utils/storage/session_storage'
-
-const mustBePassword = value => /^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,14}$/.test(value);
-const mustBeAccount = value => /^[a-zA-z]\w{3,15}$/.test(value);
+import { mustBePassword, mustBeAccount } from '@/utils/custom_validators'
 
 export default {
   name: 'Login',

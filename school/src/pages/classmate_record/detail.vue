@@ -30,7 +30,7 @@
             <router-link
               v-for="(photo,index2) in item.photos"
               :key="index2"
-              :to="{ path:'/photo_detail/', query: { itemId: id, group: index1, id: index2 } }">
+              :to="{ path:'/photoDetail/', query: { itemId: id, group: index1, id: index2 } }">
                 <img :src="photo"/>
             </router-link>
           </div>
