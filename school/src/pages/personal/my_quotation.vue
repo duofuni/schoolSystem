@@ -17,8 +17,8 @@
   </div>
 </template>
 <script>
-import backBar from '@/components/backBar'
-import S_Storage from '@/utils/storage/sessionStorage'
+import backBar from '@/components/back_bar'
+import S_Storage from '@/utils/storage/session_storage'
 
 export default {
   data() {
@@ -26,14 +26,10 @@ export default {
       title: '同学寄语',
     }
   },
-  created() {
-  },
   computed: {
     loginUser() {
       return S_Storage.getSession("loginUser");
     },
-  },
-  methods: {
   },
   components: {
     backBar

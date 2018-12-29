@@ -5,8 +5,8 @@
   </div>
 </template>
 <script>
-import backBar from '@/components/backBar'
-import S_Storage from '@/utils/storage/sessionStorage'
+import backBar from '@/components/back_bar'
+import S_Storage from '@/utils/storage/session_storage'
 
 export default {
   data:function(){

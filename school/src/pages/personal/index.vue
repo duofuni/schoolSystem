@@ -28,10 +28,10 @@
   </div>
 </template>
 <script>
-import backBar from '@/components/backBar'
+import backBar from '@/components/back_bar'
 import alert from '@/components/alert'
-import operatingAvatar from '@/components/operatingAvatar'
-import S_Storage from '@/utils/storage/sessionStorage'
+import operatingAvatar from '@/components/operating_avatar'
+import S_Storage from '@/utils/storage/session_storage'
 
 export default {
   data() {

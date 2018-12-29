@@ -1,7 +1,7 @@
 <template>
-  <div class="modifyPassword-container">
+  <div class="modify-password-container">
     <backBar :title="title"></backBar>
-    <div class="modifyPassword-list">
+    <div class="modify-password-list">
       <form @submit.prevent="handleModifyPassword">
         <div class="form-group">
           <label>旧密码：</label>
@@ -27,8 +27,8 @@
   </div>
 </template>
 <script>
-import backBar from '@/components/backBar'
-import S_Storage from '@/utils/storage/sessionStorage'
+import backBar from '@/components/back_bar'
+import S_Storage from '@/utils/storage/session_storage'
 import alert from '@/components/alert'
 import { required, sameAs } from 'vuelidate/lib/validators';
 const mustBePassword = value => /^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,14}$/.test(value);
@@ -64,8 +64,6 @@ export default {
     loginUser() {
       return S_Storage.getSession('loginUser');
     },
-  },
-  created() {
   },
   methods: {
     handleModifyPassword() {

@@ -8,7 +8,7 @@ import './assets/css/index.less'
 import router from './router/router'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import Flexible from '@/utils/adaptation/flexible'
-import S_Storage from '@/utils/storage/sessionStorage'
+import S_Storage from '@/utils/storage/session_storage'
 import Vuelidate from 'vuelidate'
 
 Vue.use(Vuelidate)

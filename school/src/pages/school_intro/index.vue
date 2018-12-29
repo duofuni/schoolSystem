@@ -11,7 +11,7 @@
   </div>
 </template>
 <script>
-import backBar from '@/components/backBar'
+import backBar from '@/components/back_bar'
 import carousel from '@/components/carousel'
 import iscrollView from 'vue-iscroll-view'
 

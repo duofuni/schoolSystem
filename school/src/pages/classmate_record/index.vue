@@ -1,8 +1,8 @@
 <template>
-  <div class="classmateRecord-container">
+  <div class="classmate-record-container">
     <backBar :title="title"></backBar>
     <div class="prompt">可爱的童鞋们!</div>
-    <div class="classmateRecord">
+    <div class="classmate-record">
       <ul>
         <router-link
           v-for="( item, index ) in userData"
@@ -21,8 +21,8 @@
   </div>
 </template>
 <script>
-import backBar from '@/components/backBar'
-import S_Storage from '@/utils/storage/sessionStorage'
+import backBar from '@/components/back_bar'
+import S_Storage from '@/utils/storage/session_storage'
 
 export default {
   data() {

@@ -17,9 +17,9 @@
   </div>
 </template>
 <script>
-import backBar from './backBar'
-import S_Storage from '@/utils/storage/sessionStorage'
-import getTime from '@/utils/date/getTime'
+import backBar from './back_bar'
+import S_Storage from '@/utils/storage/session_storage'
+import getTime from '@/utils/date/get_time'
 import { required } from 'vuelidate/lib/validators'
 
 export default {

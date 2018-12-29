@@ -9,7 +9,7 @@
     </div>
     <router-link
       tag="div"
-      to="/playVideo"
+      to="/play_video"
       class="video-item">
       <span class="btn">
         <svg 
@@ -27,10 +27,6 @@
 </template>
 <script>
 export default {
-  data() {
-    return {
-    }
-  },
 }
 </script>
 <style lang="less">

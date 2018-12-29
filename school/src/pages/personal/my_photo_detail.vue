@@ -1,12 +1,12 @@
 <template>
-  <div v-if="classmateInfo.photoList" class="photoDetail-container">
+  <div v-if="myInfo.photoList" class="myPhoto-detail-container">
     <backBar :title="title"></backBar>
     <img @click="handleNext" :src="src" alt="">
   </div>
 </template>
 <script>
-import backBar from '@/components/backBar'
-import S_Storage from '@/utils/storage/sessionStorage'
+import backBar from '@/components/back_bar'
+import S_Storage from '@/utils/storage/session_storage'
 
 export default {
   data() {
@@ -17,26 +17,26 @@ export default {
     }
   },
   computed: {
-    classmateInfo() {
-      return S_Storage.getSession('classmateInfo');
+    myInfo() {
+      return S_Storage.getSession('loginUser');
     },
     title() {
-      return this.classmateInfo.photoList[this.group].time;
+      return this.myInfo.photoList[this.group].time;
     },
     src() {
-      return this.classmateInfo.photoList[this.group].photos[this.id];
+      return this.myInfo.photoList[this.group].photos[this.id];
     },
   },
   methods: {
-    handleNext() {
-      if (this.id < this.classmateInfo.photoList[this.group].photos.length - 1) {
+    handleNext(){
+      if (this.id < this.myInfo.photoList[this.group].photos.length - 1) {
         this.id += 1;
       }
     },
   },
   components: {
     backBar,
-  },
+  }
 }
 </script>
 <style lang="less">

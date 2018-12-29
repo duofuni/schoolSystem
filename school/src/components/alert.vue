@@ -10,10 +10,6 @@
 </template>
 <script>
 export default {
-  data() {
-    return {
-    }
-  },
   methods: {
     handleClose() {
       this.$emit('off');

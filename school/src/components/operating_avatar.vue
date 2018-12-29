@@ -35,9 +35,9 @@
 </template>
 <script>
 import VueCropper from 'vue-cropper'
-import imgVerify from '@/utils/verify/imgVerify'
-import imgSrc from '@/utils/fileReader/imgSrc'
-import S_Storage from '@/utils/storage/sessionStorage'
+import imgVerify from '@/utils/verify/img_verify'
+import imgSrc from '@/utils/file_reader/img_src'
+import S_Storage from '@/utils/storage/session_storage'
 import fs from 'fs'
 
 export default {

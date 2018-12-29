@@ -9,9 +9,9 @@
 
 <script>
 import carousel from '@/components/carousel'
-import loginBar from '@/components/loginBar'
+import loginBar from '@/components/login_bar'
 import navigation from '@/components/navigation'
-import classVideos from '@/components/classVideos'
+import classVideos from '@/components/class_videos'
 
 export default {
   name: 'home',

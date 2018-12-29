@@ -1,5 +1,5 @@
 <template>
-  <div class="classmateRecord-container">
+  <div class="classmate-record-container">
     <backBar :title="title"></backBar>
     <div class="detail-header" style="backgroundImage: url('/static/images/classmate_record_bg.png')">
       <div class="head" v-if="detail">
@@ -30,7 +30,7 @@
             <router-link
               v-for="(photo,index2) in item.photos"
               :key="index2"
-              :to="{ path:'/photoDetail/', query: { itemId: id, group: index1, id: index2 } }">
+              :to="{ path:'/photo_detail/', query: { itemId: id, group: index1, id: index2 } }">
                 <img :src="photo"/>
             </router-link>
           </div>
@@ -54,8 +54,8 @@
   </div>
 </template>
 <script>
-import backBar from '@/components/backBar'
-import S_Storage from '@/utils/storage/sessionStorage'
+import backBar from '@/components/back_bar'
+import S_Storage from '@/utils/storage/session_storage'
 
 export default {
   data() {

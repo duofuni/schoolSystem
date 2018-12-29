@@ -1,7 +1,7 @@
 <template>
-  <div class="playVideos-container">
+  <div class="play-videos-container">
     <backBar :title="title"></backBar>
-    <div class="playVideos">
+    <div class="play-videos">
       <video
         class="video"
         src="http://vjs.zencdn.net/v/oceans.mp4"
@@ -13,7 +13,7 @@
   </div>
 </template>
 <script>
-import backBar from '@/components/backBar'
+import backBar from '@/components/back_bar'
 
 export default {
   data() {

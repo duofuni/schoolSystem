@@ -18,7 +18,7 @@
           <router-link
             v-for="(photo,index2) in item.photos"
             :key="index2"
-            :to="{ path:'/myPhotoDetail/', query: { itemId: id, group: index1, id: index2 } }">
+            :to="{ path:'/myPhoto_detail/', query: { itemId: id, group: index1, id: index2 } }">
           <img :src="photo"/>
         </router-link>
       </div>
@@ -28,11 +28,11 @@
   </div>
 </template>
 <script>
-import backBar from '@/components/backBar'
+import backBar from '@/components/back_bar'
 import alert from '@/components/alert'
-import S_Storage from '@/utils/storage/sessionStorage'
-import imgVerify from '@/utils/verify/imgVerify'
-import getTime from '@/utils/date/getTime'
+import S_Storage from '@/utils/storage/session_storage'
+import imgVerify from '@/utils/verify/img_verify'
+import getTime from '@/utils/date/get_time'
 
 export default {
   data() {

@@ -1,10 +1,10 @@
 const express = require('express');
 const router = express.Router();
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const settings = require('../../config/settings');
-const upload = require('../utils/imgUpload');
-const getTime = require('../utils/getTime');
+const upload = require('../utils/img_upload');
+const getTime = require('../utils/get_time');
 const db = require('../database/db');
 
 router.use((req, res, next) => {

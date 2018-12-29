@@ -20,7 +20,7 @@
   </div>
 </template>
 <script>
-import backBar from '@/components/backBar'
+import backBar from '@/components/back_bar'
 
 export default {
   data() {

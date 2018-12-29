@@ -66,7 +66,7 @@
   </div>
 </template>
 <script>
-import backBar from '@/components/backBar'
+import backBar from '@/components/back_bar'
 import alert from '@/components/alert'
 import { required } from 'vuelidate/lib/validators';
 

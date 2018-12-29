@@ -1,23 +1,24 @@
-import type from '@/utils/_typeOf/type'
-/**
- * @description [localStorage]
+import type from '@/utils/_type_of/type'
+
+/** 
+ * @description [sessionStorage]
  * @author duofuni
  */
 
 class Storage {
-    _isSupport = !!localStorage
+    _isSupport = !!sessionStorage
     constructor () {}
-    setLocal (key, value) {
+    setSession (key, value) {
         if (!this._isSupport) {
-            return console.error('当前浏览器不支持local存储！')
+            return console.error('当前浏览器不支持sesstion存储！')
         }
         if (!type.isString(key)) {
-            return console.error(`${ key } is not string！`)
+            return console.error(`${key} is not string！`)
         }
         // 存储失败
-        if (!type.isObject(value) &&
-            !type.isArray(value) &&
-            !type.isString(value) &&
+        if (!type.isObject(value) && 
+            !type.isArray(value) && 
+            !type.isString(value) && 
             !type.isBoolean(value) &&
             !type.isNumber(value)) {
             return false
@@ -27,31 +28,31 @@ class Storage {
             value = JSON.stringify(value)
         }
         // 存储数据
-        localStorage.setItem(key, value)
+        sessionStorage.setItem(key, value)
         return true
     }
-    getLocal (key) {
+    getSession (key) {
         if (!this._isSupport) {
             return console.error('当前浏览器不支持sesstion存储！')
         }
         if (!type.isString(key)) {
             return console.error(`${key} is not string！`)
         }
-        const result = JSON.parse(localStorage.getItem(key))
+        const result = JSON.parse(sessionStorage.getItem(key))
         return result ? result : ''
     }
-    clearLocal (key) {
+    clearSession (key) {
         if (!this._isSupport) {
             return console.error('当前浏览器不支持sesstion存储！')
         }
         if (type.isString(key)) {
-            localStorage.removeItem(key)
+            sessionStorage.removeItem(key)
             return true
         }
-        localStorage.clear()
+        sessionStorage.clear()
         return true
     }
 }
 
-const L_Storage = new Storage()
-export default L_Storage
+const S_Storage = new Storage()
+export default S_Storage

@@ -2,7 +2,7 @@
   <div class="videos-container">
     <backBar :title="title"></backBar>
     <div class="video-cont">
-      <router-link tag="div" to="/playVideo" class="video-item">
+      <router-link tag="div" to="/play_video" class="video-item">
         <span class="btn">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -19,7 +19,7 @@
   </div>
 </template>
 <script>
-import backBar from '@/components/backBar'
+import backBar from '@/components/back_bar'
 
 export default {
   data() {

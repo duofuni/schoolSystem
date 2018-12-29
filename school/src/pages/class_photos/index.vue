@@ -1,24 +1,18 @@
 <template>
-  <div class="classPhotos-container">
+  <div class="class-photos-container">
     <backBar :title="title"></backBar>
-    <div class="classPhotos-list">
+    <div class="class-photos-list">
     </div>
   </div>
 </template>
 <script>
-import backBar from '@/components/backBar'
+import backBar from '@/components/back_bar'
 
 export default {
   data() {
     return {
       title: '班级相册',
     }
-  },
-  computed: {
-  },
-  created() {
-  },
-  methods: {
   },
   components: {
     backBar,
